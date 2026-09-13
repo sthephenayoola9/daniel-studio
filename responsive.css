@@ -1,0 +1,178 @@
+/* ==========================================
+   DANIEL — EDITORIAL MINIMALISM PORTFOLIO
+   Responsive Stylesheet
+   ========================================== */
+
+/* Large Desktop Adjustments */
+@media (min-width: 1441px) {
+  .hero-name {
+    font-size: 130px;
+  }
+}
+
+/* Tablet & Medium Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .hero-portrait-container {
+    max-width: 100%;
+    order: -1;
+  }
+
+  .hero-portrait-frame {
+    aspect-ratio: 16 / 10;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-portrait-frame {
+    aspect-ratio: 16 / 9;
+  }
+
+  .about-details-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .footer-links-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Navigation */
+  .nav-links, .nav-book-btn {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 20px 0;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .hero-name {
+    font-size: clamp(44px, 14vw, 72px);
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle-wrapper {
+    height: 32px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* Featured Videos */
+  .videos-list {
+    gap: 80px;
+  }
+
+  .video-meta {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .video-meta-right {
+    text-align: left;
+  }
+
+  /* Services */
+  .service-item {
+    padding: 28px 0;
+  }
+
+  .service-item:hover {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .service-title {
+    font-size: clamp(26px, 8vw, 42px);
+  }
+
+  /* Hide floating service image preview on touch devices */
+  .service-preview-container {
+    display: none;
+  }
+
+  /* Experience Section */
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 20px;
+  }
+
+  .experience-number {
+    font-size: clamp(48px, 14vw, 72px);
+  }
+
+  /* Testimonials */
+  .testimonial-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .testimonial-quote-mark {
+    font-size: 60px;
+  }
+
+  /* Booking Form */
+  .form-group-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-details-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Footer */
+  .footer-closing-statement {
+    font-size: clamp(32px, 10vw, 56px);
+  }
+
+  .footer-links-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  /* Custom Cursor disable on mobile touch */
+  .custom-cursor {
+    display: none !important;
+  }
+}
